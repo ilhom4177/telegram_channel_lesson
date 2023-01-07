@@ -11,4 +11,7 @@ def fromJson(file_path: str)->dict:
         dict: Dictionary containing the data of the json file.
     
     """
-    return
+    f = open(file_path, "r",encoding='utf8').read()
+    #load json
+    data = json.loads(f)
+    return data
