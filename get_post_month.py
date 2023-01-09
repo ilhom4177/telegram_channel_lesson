@@ -12,7 +12,7 @@ def get_post_month(data:dict,month:int)->int:
     Returns: 
         int: the number of posts for the given month
     """
-    
+    msg = 0
     for msg in messages:
 
         if msg['type']=='message':
