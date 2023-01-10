@@ -14,4 +14,9 @@ def get_number_of_posts(data:dict)->int:
     for i in data["messages"]:
         if i["type"] == "message":
             c+=1
-    return c 
+    return c
+
+data = fromJson('data/result.json') 
+print(get_number_of_posts(data))
+
+ 
